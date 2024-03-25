@@ -49,13 +49,14 @@ Assurez-vous d'avoir Java JDK 8 ou supérieur installé sur votre système.
 Clonez le dépôt sur votre machine locale.
 Accédez au répertoire du projet.
 Compilez les fichiers source.
-### Démarrage du serveur
+### Test de l'application
+#### Démarrage du serveur
 Exécutez le serveur gRPC en utilisant la classe MessageServer.
 Le serveur démarrera sur le port 8080 et sera prêt à recevoir des messages.
-### Envoi de messages
+#### Envoi de messages
 Exécutez le client d'envoi de messages en utilisant la classe SendMessageClient.
 Suivez les instructions pour saisir les informations nécessaires telles que l'identifiant de l'expéditeur, l'identifiant du destinataire et le texte du message.
-### Récupération des messages
+#### Récupération des messages
 Exécutez le client de récupération de messages en utilisant la classe GetMessagesClient.
 Entrez l'identifiant de l'utilisateur pour lequel vous souhaitez récupérer les messages.
 
