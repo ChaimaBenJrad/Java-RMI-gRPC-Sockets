@@ -60,5 +60,24 @@ Suivez les instructions pour saisir les informations nécessaires telles que l'i
 Exécutez le client de récupération de messages en utilisant la classe GetMessagesClient.
 Entrez l'identifiant de l'utilisateur pour lequel vous souhaitez récupérer les messages.
 
+## Chat Application
+### Installation
+Assurez-vous d'avoir Java JDK installé sur votre système.
+Téléchargez les fichiers source de l'application depuis le dépôt GitHub.
 
+### Configuration
+Ouvrez le fichier ChatServer.java et modifiez si nécessaire le numéro de port utilisé par le serveur (par défaut : 12345).
+Compilez le code en exécutant la commande javac ChatServer.java dans le répertoire contenant le fichier.
+Faites de même pour les fichiers ChatClient1.java et ChatClient2.java.
+### Déploiement du Serveur
+Démarrez le serveur en exécutant la commande java ChatServer dans le répertoire contenant le fichier compilé ChatServer.class.
+Le serveur de chat devrait démarrer et afficher un message indiquant qu'il écoute sur le port spécifié.
+### Utilisation des Clients
+Pour démarrer un client de chat, exécutez la commande java ChatClient1 ou java ChatClient2 dans des terminaux différents ou dans des fenêtres de terminal distinctes.
+Les clients se connecteront automatiquement au serveur en utilisant l'adresse IP 127.0.0.1 et le port spécifié.
+Vous pouvez maintenant envoyer des messages depuis les clients et les voir apparaître sur les autres clients connectés au serveur.
+
+### Tests
+Connectez plusieurs clients au serveur et vérifiez que les messages sont bien transmis à tous les clients.
+Déconnectez un client et vérifiez que les autres clients continuent à fonctionner correctement.
 
